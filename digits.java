@@ -3,6 +3,8 @@
 //digits.java
 //isolates digits
 
+import java.util.*;
+
 public class digits {
 
     public static void main (String[]args)
@@ -14,7 +16,10 @@ public class digits {
         int hundreds;
         int thousands;
 
-        number = 4258;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a 4 digit number : ");
+
+        number = input.nextInt();
 
         ones = number % 10;
 
@@ -24,7 +29,7 @@ public class digits {
 
         thousands = (((number/10)/10)/10) % 10;
 
-        System.out.println("The original number is" + number + " the ones digit is " + ones + " the tens place is " + tens + " the hundreds place is " + hundreds + " and the thousands place is " + thousands);
+        System.out.println("The original number is " + number + " the ones digit is " + ones + " the tens place is " + tens + " the hundreds place is " + hundreds + " and the thousands place is " + thousands);
     }
     
 }
