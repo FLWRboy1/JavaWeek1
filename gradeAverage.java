@@ -12,7 +12,8 @@ public class gradeAverage{
         int grade2;
         int grade3;
         int grade4;
-        int avg;
+        int grade5;
+        double avg;
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a grade: ");
@@ -27,7 +28,10 @@ public class gradeAverage{
         System.out.println("Enter a grade: ");
         grade4 = input.nextInt();
 
-        avg = ((grade1 + grade2 + grade3 + grade4)/4);
+        System.out.println("Enter a grade: ");
+        grade5 = input.nextInt();
+
+        avg = ((grade1 + grade2 + grade3 + grade4 + grade5)/5);
 
         System.out.println("Your average grade is: " + avg);
     }
