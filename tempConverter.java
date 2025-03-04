@@ -7,19 +7,18 @@ public class tempConverter {
     
     public static void main(String[]args)
     {
-        String name;
-        String password;
+    
+        int Far;
+        int Cel;
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your full name: ");
-        name = input.nextLine();
+        System.out.println("Enter the temp in farenhight: ");
+        Far = input.nextInt();
 
-        System.out.println("Enter your password: ");
-        password = input.nextLine();
+        Cel = ((Far-32)*5/9);
 
-        System.out.println("Your full name is " + name + " and your password is " + password + ".");
+        System.out.println("The degrees in celcius is " + Cel);
 
     }
-
 
 }
